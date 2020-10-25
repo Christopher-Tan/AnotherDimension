@@ -29,4 +29,7 @@ public class ArrayOps {
         }
         return largest;
     }
+    public static int sum(int[][] arr) {
+        return sum(sumRows(arr));
+    }
 }

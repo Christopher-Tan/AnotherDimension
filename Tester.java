@@ -20,5 +20,9 @@ public class Tester {
         //largest_in_rows
         int[][] array6 = {{1,20,14,10},{10,5,2,4},{100,28,72,32},{10,100,1,10000,10}};
         System.out.println(Arrays.toString(ArrayOps.largestInRows(array6)));
+        //sum
+        System.out.println(ArrayOps.sum(array4));
+        System.out.println(ArrayOps.sum(array5));
+        System.out.println(ArrayOps.sum(array6));
     }
 }
