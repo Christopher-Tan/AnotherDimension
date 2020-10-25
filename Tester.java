@@ -43,5 +43,16 @@ public class Tester {
         int[][] array10 = {{1,2,15},{5,1,2},{1,4,3},{5,3,4},{1,3,1},{5,5,1},{1,1,1},{5,2,1},{1,1,1},{5,1,1}};
         System.out.println(ArrayOps.isColMagic(array9));
         System.out.println(ArrayOps.isColMagic(array10));
+        //checkpoint
+        int[][] C = {{1,2,3,4},{2,3,4,1},{3,4,1,2}};
+        int[][] D = {{1,1,1},{2,2,2},{3,3,3}};
+        int[][] E = {{2,2,2},{2,2,2}};
+        System.out.println(ArrayOps.isRowMagic(C) + " " + ArrayOps.isColMagic(C));
+        System.out.println(ArrayOps.isRowMagic(D) + " " + ArrayOps.isColMagic(D));
+        System.out.println(ArrayOps.isRowMagic(E) + " " + ArrayOps.isColMagic(E));
+        //location_magic
+        int[][] F = {{2,4,2},{2,2,2}};
+        System.out.println(ArrayOps.isLocationMagic(F,0,1));
+        System.out.println(ArrayOps.isLocationMagic(F,1,1));
     }
 }
