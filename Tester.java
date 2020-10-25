@@ -38,5 +38,10 @@ public class Tester {
         int[][] array8 = {{10,20,30},{10,10,10,10,10,10},{40,20},{60},{10,48}};
         System.out.println(ArrayOps.isRowMagic(array7));
         System.out.println(ArrayOps.isRowMagic(array8));
+        //col_magic
+        int[][] array9 = {{1,2,15},{5,1,2},{1,4,3},{5,3,4},{1,10,1},{5,5,1},{1,1,1},{5,2,1},{1,1,1},{5,1,1}};
+        int[][] array10 = {{1,2,15},{5,1,2},{1,4,3},{5,3,4},{1,3,1},{5,5,1},{1,1,1},{5,2,1},{1,1,1},{5,1,1}};
+        System.out.println(ArrayOps.isColMagic(array9));
+        System.out.println(ArrayOps.isColMagic(array10));
     }
 }
