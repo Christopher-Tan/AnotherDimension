@@ -32,4 +32,16 @@ public class ArrayOps {
     public static int sum(int[][] arr) {
         return sum(sumRows(arr));
     }
+    public static int[] sumCols(int[][] matrix) {
+        int columns = matrix[0].length;
+        int[] sum = new int[columns];
+        for (int i = 0; i < columns; i++) {
+            int scolumn = 0;
+            for (int j = 0; j < matrix.length; j++) {
+                scolumn += matrix[j][i];
+            }
+            sum[i] = scolumn;
+        }
+        return sum;
+    }
 }
