@@ -33,5 +33,10 @@ public class Tester {
         System.out.println(ArrayOps.sum(A));
         //sum_cols
         System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
+        //row_magic
+        int[][] array7 = {{10,20,30},{10,10,10,10,10,10},{40,20},{60},{10,50}};
+        int[][] array8 = {{10,20,30},{10,10,10,10,10,10},{40,20},{60},{10,48}};
+        System.out.println(ArrayOps.isRowMagic(array7));
+        System.out.println(ArrayOps.isRowMagic(array8));
     }
 }
