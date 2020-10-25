@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Tester {
     public static void main(String[] args) {
         //sum
@@ -10,5 +12,10 @@ public class Tester {
         //largest
         System.out.println(ArrayOps.largest(array1));
         System.out.println(ArrayOps.largest(array2));
+        //sum_rows
+        int[][] array4 = {{1,5,10,14},{10,5,24},{},{2,4,8}};
+        int[][] array5 = {};
+        System.out.println(Arrays.toString(ArrayOps.sumRows(array4)));
+        System.out.println(Arrays.toString(ArrayOps.sumRows(array5)));
     }
 }
